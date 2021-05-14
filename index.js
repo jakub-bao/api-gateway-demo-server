@@ -2,8 +2,9 @@ const express = require('express')
 const app = express()
 const port = 3001
 
+
 app.get('/cookieTest', (req, res) => {
-    res.send(req.headers.cookie);
+    res.send({receivedCookie: req.headers.cookie});
 })
 
 app.listen(port, () => {
