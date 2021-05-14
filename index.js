@@ -2,8 +2,7 @@ const express = require('express')
 const app = express()
 const port = 3001
 
-
-app.get('/cookieTest', (req, res) => {
+app.get('/apiGateway', (req, res) => {
     res.send({receivedCookie: req.headers.cookie});
 })
 
